@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Management Page</title>
+    <style>
+        body {
+            background-color: #f2e0ff;
+            background-image: linear-gradient(to bottom, #f2e0ff, #d0b0e0);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000066;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #00aaff;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left-column {
+            flex: 1;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .left-column h2 {
+            color: #ff9900;
+        }
+
+        .right-column {
+            flex: 2;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .top-right span {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME THERE</h1>
+    </header>
+    <div class="content-container">
+        <div class="left-column">
+            <h2>Images</h2>
+            <button onclick="addImage()">Add Image</button>
+            <h2>Videos</h2>
+            <button onclick="addVideo()">Add Video</button>
+            <h2>Text</h2>
+            <button onclick="addText()">Add Text</button>
+        </div>
+        <div class="right-column">
+            <h2>Content Management Tools</h2>
+            <!-- Content management tools go here -->
+            <div class="options">
+                <button onclick="signIn()">Sign In</button>
+                <button onclick="createBlog()">Create a Blog</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-right">
+        Guest
+    </div>
+    <div class="top-left" onclick="goBack()">
+        &#9664; Back
+    </div>
+    <div class="top-right">
+        <span>&#x21bb; Refresh</span>
+        <span>Add Account</span>
+        <span>&#9664; Back</span>
+        <span>Theme</span>
+    </div>
+
+    <script>
+        function addImage() {
+            alert("Add Image functionality");
+        }
+
+        function addVideo() {
+            alert("Add Video functionality");
+        }
+
+        function addText() {
+            alert("Add Text functionality");
+        }
+
+        function signIn() {
+            alert("Sign In functionality");
+        }
+
+        function createBlog() {
+            alert("Create Blog functionality");
+        }
+
+        function goBack() {
+            alert("Go Back functionality");
+        }
+    </script>
+</body>
+</html>
